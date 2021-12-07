@@ -1,0 +1,32 @@
+header {
+  @include flex(space-between);
+
+  nav {
+    margin-left: 81%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  ul {
+    @include flex2
+  }
+
+  li {
+    margin:0 16%;
+
+    a {
+      color: $black;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.header_h1 {
+  width: 13%;
+  position: absolute;
+  top: 1.5%;
+  left: 4%;
+}

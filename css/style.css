@@ -1,8 +1,8 @@
 @charset "UTF-8";
-
 html {
   font-size: 100%;
 }
+
 body {
   color: #383e45;
   font-size: 0.9rem;
@@ -21,16 +21,15 @@ li {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header_h1 {
-  width: 13%;
-  position: absolute;
-  top: 1.5%;
-  left: 4%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header nav {
@@ -40,21 +39,30 @@ header nav {
 }
 
 header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   float: right;
   position: relative;
 }
 
 header li {
-  margin:0 16%;
+  margin: 0 16%;
 }
 
 header li a {
-  color: #24292e;
+  color: #383e45;
 }
 
 header li a:hover {
   opacity: 0.7;
+}
+
+.header_h1 {
+  width: 13%;
+  position: absolute;
+  top: 1.5%;
+  left: 4%;
 }
 
 #top {
@@ -67,12 +75,15 @@ header li a:hover {
 }
 
 #about .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  /* 直下のdivなどの要素を並列に並べる。 */
-  justify-content: center; 
-  /* x軸を中心に寄せる */
-  align-items: center;
-  /* y軸を中心に寄せる */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #about img {
@@ -85,7 +96,6 @@ header li a:hover {
 
 #about .sub {
   text-align: left;
-  /* 左寄せ */
 }
 
 .ttl {
@@ -106,14 +116,19 @@ header li a:hover {
 }
 
 #bicycle ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  /* x軸にn個の要素を等間隔にスペースを開ける */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #bicycle li {
   width: 32%;
-  /* 三つの場合33%ではなく32%の方が空白の概念的に良き */
 }
 
 #footer {
@@ -134,23 +149,18 @@ header li a:hover {
   header li a {
     font-size: 1.5rem;
   }
-
   body {
     font-size: 1.3rem;
   }
-
   #top img {
     width: 100%;
   }
-
   .ttl {
     font-size: 3.5rem;
   }
-
   .sub_ttl {
     font-size: 2rem;
   }
-
   #footer {
     font-size: 1rem;
   }
@@ -165,11 +175,9 @@ header li a:hover {
 
 /* メディアクリ  759px以下の場合 */
 @media screen and (max-width: 759px) {
-
   header ul {
     margin-right: 20%;
   }
-
   #bicycle {
     margin: 10% 10%;
   }
@@ -177,11 +185,9 @@ header li a:hover {
 
 /* メディアクリ  664px以下の場合 */
 @media screen and (max-width: 664px) {
-  
   header ul {
     margin-right: 40%;
   }
-
   #bicycle {
     margin: 10% 5%;
   }
@@ -189,39 +195,31 @@ header li a:hover {
 
 /* メディアクリ  600px以下の場合(ここからスマホ用*/
 @media screen and (max-width: 600px) {
-
   .header_h1 {
     width: 20%;
     top: 0.5%;
   }
-
   header ul {
     margin-right: 80%;
   }
-
   #about .name {
     display: block;
   }
-
   #about img {
     width: 20%;
     height: 20%;
     margin: auto;
   }
-  
   #about .sub {
     text-align: center;
     margin: 5%;
   }
-
   #bicycle {
     margin: 10% 15%;
   }
-  
   #bicycle ul {
     display: block;
   }
-  
   #bicycle li {
     width: 100%;
     margin: 10% auto;
@@ -233,7 +231,6 @@ header li a:hover {
   header nav {
     margin-left: 70%;
   }
-
   body {
     font-size: 0.75rem;
   }
@@ -261,7 +258,6 @@ header li a:hover {
   #about {
     margin: 10% 0;
   }
-  
   #about .sub {
     margin: 5% 0;
   }

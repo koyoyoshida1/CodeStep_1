@@ -1,0 +1,32 @@
+#about {
+  margin: 10% 5%;
+  text-align: center;
+
+  .name {
+    @include flex(center);
+  }
+
+  img {
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+  /* 丸くする */
+  margin-right: 3%;
+  }
+
+  .sub {
+    text-align: left;
+  }
+}
+
+.ttl {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 7%;
+  border-bottom: solid 1px #383e45;
+}
+
+.sub_ttl {
+  font-size: 1rem;
+  margin: 1% 0;
+}

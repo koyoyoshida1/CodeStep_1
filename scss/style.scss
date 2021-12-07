@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+// 各スタイル読み込み
+
+@import "modules/color";  //全体のカラー 
+@import "modules/setting"; //全体の文字などの設定
+@import "modules/mixin"; //mixin用
+@import "layout/header"; //全体のコード(PCファースト)
+@import "layout/top";
+@import "layout/about";
+@import "layout/bicycle";
+@import "layout/footer";
+@import "layout/media";
