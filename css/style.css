@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #383e45;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_h1 {
+  width: 13%;
+  position: absolute;
+  top: 1.5%;
+  left: 4%;
+}
+
+header nav {
+  margin-left: 81%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+header ul {
+  display: flex;
+  float: right;
+  position: relative;
+}
+
+header li {
+  margin:0 16%;
+}
+
+header li a {
+  color: #24292e;
+}
+
+header li a:hover {
+  opacity: 0.7;
+}
+
+#top {
+  margin-bottom: 10%;
+}
+
+#about {
+  margin: 10% 5%;
+  text-align: center;
+}
+
+#about .name {
+  display: flex;
+  /* 直下のdivなどの要素を並列に並べる。 */
+  justify-content: center; 
+  /* x軸を中心に寄せる */
+  align-items: center;
+  /* y軸を中心に寄せる */
+}
+
+#about img {
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+  /* 丸くする */
+  margin-right: 3%;
+}
+
+#about .sub {
+  text-align: left;
+  /* 左寄せ */
+}
+
+.ttl {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 7%;
+  border-bottom: solid 1px #383e45;
+}
+
+.sub_ttl {
+  font-size: 1rem;
+  margin: 1% 0;
+}
+
+#bicycle {
+  margin: 10% 20%;
+  text-align: center;
+}
+
+#bicycle ul {
+  display: flex;
+  justify-content: space-between;
+  /* x軸にn個の要素を等間隔にスペースを開ける */
+}
+
+#bicycle li {
+  width: 32%;
+  /* 三つの場合33%ではなく32%の方が空白の概念的に良き */
+}
+
+#footer {
+  margin: 10% auto 1% auto;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+/* メディアクリ 1440px以上の場合 */
+@media screen and (min-width: 1440px) {
+  header li a {
+    font-size: 1.2rem;
+  }
+}
+
+/* メディアクリ 1921px以上の場合 */
+@media screen and (min-width: 1921px) {
+  header li a {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 1.3rem;
+  }
+
+  #top img {
+    width: 100%;
+  }
+
+  .ttl {
+    font-size: 3.5rem;
+  }
+
+  .sub_ttl {
+    font-size: 2rem;
+  }
+
+  #footer {
+    font-size: 1rem;
+  }
+}
+
+/* メディアクリ  886px以下の場合*/
+@media screen and (max-width: 886px) {
+  #bicycle {
+    margin: 10% 15%;
+  }
+}
+
+/* メディアクリ  759px以下の場合 */
+@media screen and (max-width: 759px) {
+
+  header ul {
+    margin-right: 20%;
+  }
+
+  #bicycle {
+    margin: 10% 10%;
+  }
+}
+
+/* メディアクリ  664px以下の場合 */
+@media screen and (max-width: 664px) {
+  
+  header ul {
+    margin-right: 40%;
+  }
+
+  #bicycle {
+    margin: 10% 5%;
+  }
+}
+
+/* メディアクリ  600px以下の場合(ここからスマホ用*/
+@media screen and (max-width: 600px) {
+
+  .header_h1 {
+    width: 20%;
+    top: 0.5%;
+  }
+
+  header ul {
+    margin-right: 80%;
+  }
+
+  #about .name {
+    display: block;
+  }
+
+  #about img {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+  }
+  
+  #about .sub {
+    text-align: center;
+    margin: 5%;
+  }
+
+  #bicycle {
+    margin: 10% 15%;
+  }
+  
+  #bicycle ul {
+    display: block;
+  }
+  
+  #bicycle li {
+    width: 100%;
+    margin: 10% auto;
+  }
+}
+
+/* メディアクリ 425px以下の場合 */
+@media screen and (max-width: 490px) {
+  header nav {
+    margin-left: 70%;
+  }
+
+  body {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  body {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  body {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #about .sub {
+    margin: 5% auto;
+  }
+}
+
+@media screen and (max-width: 306px) {
+  #about {
+    margin: 10% 0;
+  }
+  
+  #about .sub {
+    margin: 5% 0;
+  }
+}
